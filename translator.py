@@ -6,21 +6,21 @@ engine = pyttsx3.init()
 
 def clicked():
     res ="{}".format(txt.get())
-    a=res 
+    a=res
     if res== 'one':
         b = ('один')
     elif res== 'two':
         b = ('два')
     elif res== 'three':
-        b = ('три')
+        b = ('Уч')
     elif res== 'four':
         b = ('четыре')
     else:
         b = ('Данное слово не существует')
     lbl1.configure(text=b)
 def say():
-    
-    res1 ="{}".format(txt.get())   
+
+    res1 ="{}".format(txt.get())
     if res1== 'one':
         b1 = ('один')
     elif res1== 'two':
@@ -32,9 +32,9 @@ def say():
     else:
         b1 = ('Данное слово не существует')
     engine.say(b1)
-    engine.runAndWait()    
+    engine.runAndWait()
 
-   
+
 
 
 window = Tk()
